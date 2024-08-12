@@ -1,0 +1,16 @@
+---
+title: "diamonds"
+output: html_document
+date: "`r Sys.time()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+
+```{r pressure, echo=FALSE}
+boxplot(price~color, diamonds)
+```
+
